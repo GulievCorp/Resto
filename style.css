@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans';
+}
+
+header {
+    background-image: url(./assets/img/background.jpg);
+    background-repeat: no-repeat;
+    height: 100vh; 
+    background-size: cover;
+    /* Наш блок растягивается на весь наш */
+}
+
+.header-line {
+    display: flex; /*Делаем header в строку*/
+    padding-top: 50px;
+    align-items: center; /*Выравниваем все по линии логотипа*/
+    justify-content: space-around; /*Что бы элементы располагались на некотором расстоянии*/
+}
+
+
+
+.container {
+    margin: 0px 166px;
+}
+
+.nav-item {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 25px;
+    transition: color 0.3s linear; /*Свойство которое миняем, время анимации, какая то хуйня еще*/
+}
+
+.nav-item:hover {
+    color: #FF7400;
+}
+
+.cart {
+    position: relative;
+    padding-right: 10px;
+    border-right: 1px solid #FFFFFF;
+    height: 50px;
+}
+
+.cart-img {
+    top: 20px;
+    position: absolute;
+    right: 7px;
+}
+
+.num {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s linear; /*Свойство которое миняем, время анимации, какая то хуйня еще*/
+}
+
+.num:hover {
+    color: #FF7400;
+}
+
+.phone-text a {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s linear; /*Свойство которое миняем, время анимации, какая то хуйня еще*/
+}
+
+.phone-text a:hover {
+    color: #FF7400;
+}
+
+.phone-holder {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    background: #FF7400;
+    color: white;
+    text-decoration: none;
+    padding: 14px 14px;
+    font-weight: 700;
+}
