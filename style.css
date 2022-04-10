@@ -6,16 +6,19 @@ body {
 header {
     background-image: url(./assets/img/background.jpg);
     background-repeat: no-repeat;
-    height: 100vh; 
+    height: 100vh;
     background-size: cover;
     /* Наш блок растягивается на весь наш */
 }
 
 .header-line {
-    display: flex; /*Делаем header в строку*/
+    display: flex;
+    /*Делаем header в строку*/
     padding-top: 50px;
-    align-items: center; /*Выравниваем все по линии логотипа*/
-    justify-content: space-around; /*Что бы элементы располагались на некотором расстоянии*/
+    align-items: center;
+    /*Выравниваем все по линии логотипа*/
+    justify-content: space-around;
+    /*Что бы элементы располагались на некотором расстоянии*/
 }
 
 
@@ -30,7 +33,8 @@ header {
     text-decoration: none;
     font-weight: 700;
     margin-right: 25px;
-    transition: color 0.3s linear; /*Свойство которое миняем, время анимации, какая то хуйня еще*/
+    transition: color 0.3s linear;
+    /*Свойство которое миняем, время анимации, какая то хуйня еще*/
 }
 
 .nav-item:hover {
@@ -54,7 +58,8 @@ header {
     color: #fff;
     text-decoration: none;
     font-weight: 700;
-    transition: color 0.3s linear; /*Свойство которое миняем, время анимации, какая то хуйня еще*/
+    transition: color 0.3s linear;
+    /*Свойство которое миняем, время анимации, какая то хуйня еще*/
 }
 
 .num:hover {
@@ -66,7 +71,8 @@ header {
     font-weight: 400;
     text-decoration: none;
     color: #fff;
-    transition: color 0.3s linear; /*Свойство которое миняем, время анимации, какая то хуйня еще*/
+    transition: color 0.3s linear;
+    /*Свойство которое миняем, время анимации, какая то хуйня еще*/
 }
 
 .phone-text a:hover {
@@ -114,7 +120,7 @@ header {
     font-weight: 400;
 }
 
-.header-suptitle::after{
+.header-suptitle::after {
     position: absolute;
     content: '';
     height: 2px;
@@ -124,7 +130,7 @@ header {
     left: 56px;
 }
 
-.header-suptitle::before{
+.header-suptitle::before {
     position: absolute;
     content: '';
     height: 2px;
@@ -147,4 +153,122 @@ header {
 
 .header-button:hover {
     background-color: #b45609;
+}
+
+.cards-holder {
+    /* Делаем расположение наших карточек в строчку */
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+    width: 349px;
+    margin-right: 31px;
+    background-color: #fff;
+    margin-top: -80px;
+    font-family: 'Tinos', serif;
+    padding: 10px 10px;
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+    padding-top: 31px;
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.card-title span {
+    color: #BC9060;
+}
+
+.card-description {
+    text-align: center;
+    font-size: 26px;
+    color: #656363;
+}
+
+.history {
+    margin-top: 166px;
+}
+
+.hitsory-title {
+    font-family: 'Tinos', serif;
+    font-size: 54px;
+    text-align: center;
+    width: 444px;
+}
+
+.hitsory-title span {
+    color: #BC9060;
+}
+
+.histroy-description {
+    margin-top: 21px;
+    text-align: center;
+    width: 444px;
+    color: #656363;
+    font-size: 16px;
+}
+
+.history-number {
+    display: flex;
+    width: 444px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.number-item {
+    margin-right: 60px;
+}
+
+.number-item span {
+    display: block;
+    font-size: 14px;
+    color: #000;
+}
+
+.number-item {
+    color: #BC9060;
+    font-size: 40px;
+    text-align: center;
+}
+
+.history-holder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.history-images {
+    margin-right: 700px;
+    position: relative;
+}
+
+.image-1 {
+    position: absolute;
+    z-index: 0;
+    top: 54px;
+    left: 211px;
+}
+
+.image-2 {
+    position: absolute;
+    z-index: 1;
+    top: -92px;
+    left: 383px;
+}
+
+.image-3 {
+    position: absolute;
+    z-index: 2;
+    top: 241px;
+    left: 486px;
 }
